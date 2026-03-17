@@ -1,0 +1,172 @@
+import React from 'react'
+
+const Home = () => {
+  return (
+    <>
+    
+    
+
+<body>
+
+    {/* <!-- Navbar --> */}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="home.html"> ABHISHEK PATEL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {/* <!-- Hero Section --> */}
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h1 class="hello">Hello, I'm</h1>
+                    <h1 class="name"> ABHISHEK PATEL</h1>
+                    <h3>I am a <span id="typing"></span></h3>
+                    <p class="lead mt-4">
+                        Passionate self-taught web developer specializing in clean, responsive websites and full-stack applications.  
+                        Actively seeking full stack Web Developer roles to contribute, learn, and grow with innovative teams.
+                    </p>
+                    <div class="mt-5">
+                        <a href="contact.html" class="btn btn-primary btn-lg me-3">Connect With Me</a>
+                        <a href="projects.html" class="btn btn-outline-light btn-lg">View Projects</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/nakul.jpg" alt=" ABHISHEK PATEL" class="hero-img rounded-circle shadow-lg img-fluid"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {/* <!-- Skills Preview --> */}
+    <section class="container py-5">
+        <h2 class="section-title">Technical Skills Snapshot</h2>
+        <div class="row g-4 justify-content-center" id="skills"></div>
+    </section>
+
+    {/* <!-- Projects Preview --> */}
+    <section class="container py-5 bg-light">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card project-card shadow">
+                
+                    <div class="card-body">
+                        <h5>E-Commerce Website</h5>
+                        <p>React + node.js Web API based full stack platform.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card shadow">
+               
+                    <div class="card-body">
+                        <h5>To-Do List App</h5>
+                        <p>Simple task manager using JavaScript & Local Storage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card shadow">
+      
+                    <div class="card-body">
+                        <h5>Weather App</h5>
+                        <p>Live weather data using API integration.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card project-card shadow">
+              
+                    <div class="card-body">
+                        <h5>Portfolio Website</h5>
+                        <p>Personal portfolio website using HTML, CSS, and JS..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="projects.html" class="btn btn-outline-primary btn-lg">See All Projects →</a>
+        </div>
+    </section>
+
+    {/* <!-- Professional Footer --> */}
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3"> ABHISHEK PATEL</h5>
+                    <p class="mb-1">Aspiring full stack Web Developer</p>
+                    <p class="small mb-0">© 2026 All rights reserved.</p>
+                </div>
+
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="skills.html" class="text-white text-decoration-none">Skills</a></li>
+                        <li><a href="projects.html" class="text-white text-decoration-none">Projects</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Get in Touch</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-envelope me-2 text-primary"></i>
+                            <a href="mailto:abhishekpatel71773@gmail.com" class="text-white text-decoration-none">
+                               abhishekpatel71773@gmail.com
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-phone me-2 text-primary"></i>
+                            <a href="tel:+8839890290" class="text-white text-decoration-none">
+                                +91 8839892090
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fab fa-linkedin me-2 text-primary"></i>
+                            <a href="https://www.linkedin.com/in/abhishek-patel-263b692b5/" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github me-2 text-primary"></i>
+                            <a href="https://github.com/abhishekpatel8839" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">
+                                GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center mt-4 pt-3 border-top border-secondary">
+                <small>Made with ❤️ in Madhya Pradesh | Open to full stack Web Developer Roles</small>
+            </div>
+        </div>
+    </footer>
+
+
+    
+</body>
+    
+    </>
+  )
+}
+
+export default Home
