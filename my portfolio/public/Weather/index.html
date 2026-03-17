@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Vibes</title>
+
+  <!-- Bootstrap 5.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container-custom">
+  <h1 class="text-center mb-3">🌤️ Weather Vibes</h1>
+  <div class="text-center text-muted mb-4" id="currentDateTime"></div>
+
+  <div class="input-group mb-4">
+    <input type="text" id="city" class="form-control" placeholder="City name..." autocomplete="off">
+    <button class="btn btn-primary" id="searchBtn" type="button" onclick="getWeather()">Search</button>
+  </div>
+
+  <div class="text-center mb-4 toggle-theme" onclick="toggleTheme()">
+    🌙 Dark / Light Mode
+  </div>
+
+  <h4 class="text-center mb-3" id="cityName"></h4>
+
+  <div id="current" class="text-center mb-5"></div>
+
+  <div id="forecast" class="d-flex flex-wrap gap-3 justify-content-center mb-5"></div>
+
+  <div class="hourly-section mb-5">
+    <h5 class="text-center mb-3" id="defaultTitle">Next 24 Hours</h5>
+    <canvas id="hourlyChart" height="140"></canvas>
+  </div>
+
+  <div id="selectedHourlySection" class="hourly-section d-none">
+    <h5 class="text-center mb-3" id="selectedTitle"></h5>
+    <canvas id="selectedHourlyChart" height="140"></canvas>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

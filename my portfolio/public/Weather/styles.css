@@ -1,0 +1,77 @@
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background-size: 200% 200%;
+  animation: gradient 18s ease infinite;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+[data-bs-theme="light"] body {
+  background: linear-gradient(135deg, #f1f5f9, #cbd5e1);
+}
+
+.container-custom {
+  max-width: 440px;
+  margin: auto;
+  background: rgba(30, 41, 59, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+[data-bs-theme="light"] .container-custom {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.card-forecast {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: all 0.25s ease;
+  cursor: pointer;
+  min-width: 90px;
+}
+
+.card-forecast:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card-forecast.active {
+  border-color: #38bdf8;
+  background: rgba(56,189,248,0.20);
+}
+
+[data-bs-theme="light"] .card-forecast {
+  background: rgba(0,0,0,0.05);
+  border-color: rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="light"] .card-forecast.active {
+  background: rgba(14,165,233,0.15);
+  border-color: #0ea5e9;
+}
+
+.icon { font-size: 7rem; line-height: 1; }
+.temp { font-size: 4.8rem; font-weight: 700; line-height: 0.9; }
+.toggle-theme {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+.toggle-theme:hover {
+  color: #38bdf8;
+}
+
+[data-bs-theme="light"] .toggle-theme:hover {
+  color: #0ea5e9;
+}
